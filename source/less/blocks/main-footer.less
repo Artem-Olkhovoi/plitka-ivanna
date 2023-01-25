@@ -1,0 +1,162 @@
+.main-footer__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+
+  letter-spacing: 0.03em;
+  color: #c4c4c4;
+}
+
+.main-footer__copyright {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #c4c4c4;
+  margin-bottom: 14px;
+}
+
+.main-footer__sitemap {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #c4c4c4;
+}
+
+.main-footer__logo {
+  background-image: url("../img/footer-plitka-ivanna-icon.svg");
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 37px;
+  display: inline-block;
+}
+
+.main-footer__developers {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 104.9%;
+  letter-spacing: 0.05em;
+  color: #c4c4c4;
+  margin-right: auto;
+}
+
+.main-footer__developers-logo {
+  background-image: url("../img/footer-shogo-logo.svg");
+  background-repeat: no-repeat;
+  width: 190px;
+  height: 13px;
+  display: inline-block;
+}
+
+.main-footer__item {
+  margin-bottom: 26px;
+}
+
+.main-footer {
+  background-color: #2b2b2b;
+}
+
+.main-footer__wrapper {
+  width: 375px;
+  padding: 33px 15px 19px 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.main-footer__user-information-wrapper {
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.main-footer__copyright-map-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.main-footer__developers-wrapper {
+  padding: 26px 0 0;
+  border-top: 1px solid #cecece;
+  display: flex;
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    width: 1920px;
+    padding: 34px 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-footer__list {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 60px;
+      background-color: #c4c4c4;
+      left: -135px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 60px;
+      background-color: #c4c4c4;
+      right: -135px;
+    }
+  }
+
+  .main-footer__item {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+
+  .main-footer__copyright-map-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .main-footer__logo {
+    order: -1;
+    margin-right: 58px;
+  }
+
+  .main-footer__developers {
+    margin-right: 45px;
+  }
+
+  .main-footer__user-information-wrapper {
+    order: -1;
+    margin-bottom: 0;
+  }
+
+  .main-footer__copyright {
+    margin-bottom: 0;
+    margin-right: 45px;
+  }
+
+  .main-footer__developers-wrapper {
+    padding: 0;
+    border: none;
+    align-items: center;
+  }
+}
